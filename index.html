@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styleigleencabezado.css" rel="stylesheet" type="text/css"/>
+        <title>Iglesia Metodista Libre Casa de Dios</title>
+    </head>
+    <body>
+        <header>
+            <section class="flex-container">
+                <div class="izquierda">
+                   <img src="LOGO CASA DE DIOS.jpg"alt="Logo IML"/>
+                </div>
+                <div class="derecha">
+                   <h1>"Y les daré un corazón, y un espíritu nuevo pondré dentro de ellos; y quitaré el corazón de piedra de en medio de su carne, y les daré un corazón de carne," (Ezequiel 11:19)</h1>
+                <div>
+            </section>
+        </header>
+        
+        <nav class="navbar">
+           <div class="hamburger" onclick="toggleMenu()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+           </div>
+           <div class="menu" id="menu">
+              <a href="#">Inicio</a>
+              <a href="quienes somos.html">Quienes Somos</a>
+              <a href="donde estamos.html">Dónde Estamos</a>
+           </div>
+        </nav>
+        <main>
+            <section class="flex-container2">
+               <div class="columna">
+                   <div class="titulo-columna">
+                      Nuestros Orígenes
+                   </div>
+                   <video src="CORTO DE JUAN WESLEY.mp4" controls></video>
+                   <p>Éste video muestra la primera Capilla del Movimiento Metodista, servía también como Escuela y lugar de residencia.  La estructura del templo muestra cómo fue diseñada para enfrentar la persecución que sufrieron, los ataques que recibían de manera injustificada y los continuos esfuerzos y peligros que asumían.  Pincha <a href="https://www.youtube.com/watch?v=YMF4VVVfvWw">Aquí</a> para ver el video completo.</p>
+               </div>
+               <div class="columna">
+                   <div class="titulo-columna">
+                      IML Casa de Dios en Acción
+                   </div>
+                   <div class="imagenes-centrales">   
+                      <video src="VIDEO EBD.mp4" controls></video>
+                      <br>
+                      <p>Participa en nuestra <strong>Escuela Bíblica Vacacional,</strong> desde el Jueves 31 de Julio al Domingo 03 de Agosto.  Te esperamos...</p>
+                   </div>
+               </div>
+               <div class="columna">
+                   <div class="titulo-columna">   
+                      Anuncios
+                   </div>
+                   <div class="logo-conferencia">
+                         <img src="COLUMNA DERECHA.jpg"alt="Logo conferencia"/>
+                   </div>
+               </div>
+           </section>
+              <div class="titulo-abajo">
+                 La Fidelidad de Dios
+              </div>
+            <div class="foto-central-grande" style="text-align: center;" id="slider">
+                      <img src="niños en rueda.jpg"alt="niños" id="slide-img"/>
+            </div>
+            <script>
+                // Lista de imágenes
+                const fotos = ["niños en rueda.jpg", "INTERMITENTE 2.jpg", "INTERMITENTE 3.jpg", "FLAYER JOVENES.jpg", "FLAYER TRATA DE PERSONAS.jpg", "FLAYER EBV.png"];
+                let indice = 0;
+
+                setInterval(function() {
+                indice = (indice + 1) % fotos.length; // Va de 0 a 2 y vuelve a 0
+                document.getElementById('slide-img').src = fotos[indice];
+                }, 3000); // Cambia cada 2 segundos (2000 milisegundos)
+            </script>
+            <div class="image-container">
+               <img src="horizontal1.jpg" alt="Imagen 1">
+               <img src="horizontal2.jpg" alt="Imagen 2">
+               <img src="horizontal3.jpg" alt="Imagen 3">
+            </div>
+            <div class="contenedor-franja">
+               <div class="ultima-franja">
+                   El Señor Viene Pronto...
+               </div>
+            </div>
+        </main>
+        <footer class="footer">
+           <p>© 2025 EKY Technologies</p>
+       </footer>
+       <script src="scriptresponsivo.js"></script>
+    </body>
+</html>

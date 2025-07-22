@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styleigleencabezado.css" rel="stylesheet" type="text/css"/>
+        <title>Iglesia Metodista Libre Casa de Dios Donde Estamos</title>
+    </head>
+    <body>
+        <header>
+            <section class="flex-container">
+                <div class="izquierda">
+                   <img src="LOGO CASA DE DIOS.jpg"alt="Logo IML"/>
+                </div>
+                <div class="derecha">
+                   <h1>"Y les daré un corazón, y un espíritu nuevo pondré dentro de ellos; y quitaré el corazón de piedra de en medio de su carne, y les daré un corazón de carne," (Ezequiel 11:19)</h1>
+                <div>
+            </section>
+        </header>
+        
+        <nav class="navbar">
+           <div class="hamburger" onclick="toggleMenu()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+           </div>
+           <div class="menu" id="menu">
+              <a href="index.html">Inicio</a>
+              <a href="quienes somos.html">Quienes Somos</a>
+              <a href="#">Dónde Estamos</a>
+           </div>
+        </nav>
+        <main>
+            <section class="flex-containerquienes">
+                   <div class="titulo-quienes-somos">
+                      <h2>Dónde estamos</h2>
+                   </div>
+                   <div class="parrafo-quienes-somos">
+                      Estamos ubicados en la Urb. Los Tapiales II, Calle D, No. 2, Maturín, Edo. Monagas - Venezuela. 
+                   </div>
+                    <div class="titulo-quienes-somos">
+                      <h2>Contacto</h2>
+                   </div>
+                   <div class="parrafo-quienes-somos">
+                      Puedes escribirnos a nuestro Correo Electrónico: imlcasadeDios5@gmail.com <br><br>
+                   </div>
+            </section>
+              <div class="titulo-abajo">
+                 La Fidelidad de Dios
+              </div>
+            <div class="foto-central-grande" style="text-align: center;" id="slider">
+                      <img src="niños en rueda.jpg"alt="niños" id="slide-img"/>
+            </div>
+            <script>
+                // Lista de imágenes
+                const fotos = ["niños en rueda.jpg", "FLAYER EBV.png", "FLAYER JOVENES.JPG", "FLAYER TRATA DE PERSONAS.jpg"];
+                let indice = 0;
+
+                setInterval(function() {
+                indice = (indice + 1) % fotos.length; // Va de 0 a 2 y vuelve a 0
+                document.getElementById('slide-img').src = fotos[indice];
+                }, 2000); // Cambia cada 2 segundos (2000 milisegundos)
+            </script>
+            <div class="contenedor-franja2">
+               <div class="ultima-franja2">
+                   <a href="index.html">Volver a la Página de Inicio</a>
+               </div>
+            </div>
+        </main>
+        <footer class="footer">
+           <p>© 2025 EKY Technologies</p>
+       </footer>
+       <script src="scriptresponsivo.js"></script>
+    </body>
+</html>

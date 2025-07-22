@@ -1,0 +1,299 @@
+body {
+    background: gold;
+}
+
+.izquierda {
+    background: yellow;
+    height: 100px;
+    max-width: 100%;
+}
+
+.derecha {
+    background: yellow;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    margin-bottom: 1px;
+       
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px (tabletas y móviles) */
+  body {
+    font-size: 10px;
+  }
+}
+
+h1 {
+    font size: 60px;
+    text-align: :start;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 100px 0px;
+    color: black;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Cambia la dirección a columna */
+    
+}
+
+body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background: black;
+      color: #fff;
+      padding: 10px 20px;
+      position: relative;
+      height: 50px;
+    }
+    .navbar h1 {
+      display: inline-block;
+      margin: 0;
+      font-size: 22px;
+    }
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      background: #333;
+      z-index: 2;
+    }
+    .menu a {
+      color: #fff;
+      padding: 15px 20px;
+      text-decoration: none;
+      border-top: 1px solid #444;
+      transition: background 0.3s;
+    }
+    .menu a:hover {
+      background: #444;
+    }
+    .hamburger {
+      display: inline-block;
+      cursor: pointer;
+      float: right;
+      margin-top: 4px;
+    }
+    .bar {
+      display: block;
+      width: 28px;
+      height: 4px;
+      margin: 5px 0;
+      background: #fff;
+      border-radius: 2px;
+      transition: 0.4s;
+    }
+    @media (min-width: 800px) {
+      .menu {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+      }
+      .menu a {
+        border-top: none;
+        padding: 10px 15px;
+      }
+      .hamburger {
+        display: none;
+      }
+    }
+
+.flex-container2{
+    display: flex;
+    flex-wrap: wrap; /*me coloca los elementos en mas de una linea automaticamente*/
+    align-items: center;
+    justify-content: center; /*con el anterior me centra los elementos del contenedor*/
+}
+
+
+.columna {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    width: 485px;
+    height: 520px;
+    margin: 5px;
+    line-height: 120px;
+    text-align: center;
+    font-size: 25px;
+}
+
+video {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+p {
+   color: black;
+   text-align: center;
+   font-size: 15px;
+   margin: 0;
+   line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px (tabletas y móviles) */
+  p {
+    width: 350px;
+    text-align:center;
+    margin: 0 auto;  /*PARA CENTRAR HORIZONTALMENTE*/
+  }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logoconferencia {
+    width: 100px;
+    height: 100%;
+    overflow: hidden;
+    align-self: flex-end; 
+    margin: 500px;
+    padding: 20px;
+}
+
+
+.titulo-abajo {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0;
+    color: black;
+    align-items: center;
+    height: 40px;
+}
+
+
+.foto-central-grande{
+    background-color: gold; 
+}
+
+.image-container {
+  display: flex; /* Habilita el diseño flexible */
+  justify-content: space-around; /* Distribuye las imágenes con espacio entre ellas */
+  background-color: gold;
+}
+
+.image-container img {
+  width: 30%; /* Ajusta el ancho de cada imagen */
+  margin: 0 5px; /* Agrega un pequeño margen horizontal */
+}
+
+.ultima-franja{
+    background: yellow;
+    height: 100px;
+    font-size: 50px;
+    margin: 3px;
+    margin-bottom: 20px;
+}
+
+.ultima-franja2{
+    background: yellow;
+    height: 100px;
+    font-size: 25px;
+    margin: 3px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px (tabletas y móviles) */
+  .contenedor-franja{
+    display: flex;
+    align-items: center; /*centramos verticalmente*/
+    height: 80px;
+    margin-bottom: 15px;
+  }
+ 
+  .ultima-franja {
+    font-size: 25px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .contenedor-franja2{
+    display: flex;
+    align-items: center; /*centramos verticalmente*/
+    height: 80px;
+    margin-bottom: 15px;
+  }
+ 
+  .ultima-franja2 {
+    font-size: 10px;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+.titulo-columna {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px (tabletas y móviles) */
+  .titulo-columna {
+    font-size: 25px;
+  }
+}
+
+.imagenes-centrales {
+    width: 400px;
+    height: 100%;
+    overflow: hidden;
+    align-self: flex-end; 
+    margin: 40px;    
+}
+
+.flex-containerquienes{
+   display: block;
+   margin: 1px;
+   padding: 0%;
+}
+
+.titulo-quienes-somos {
+   font-size: 30px;
+   text-align: center;
+}
+
+.parrafo-quienes-somos {
+   font-size: 35px;
+   margin: 1px;
+   margin-left: 120px;
+   margin-right: 120px;
+   padding: 0%;
+   text-align: justify;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas con ancho máximo de 768px (tabletas y móviles) */
+  .titulo-quienes-somos {
+   font-size: 20px;
+   text-align: center;
+}
+
+.parrafo-quienes-somos {
+   font-size: 15px;
+   margin: 1px;
+   margin-left: 10px;
+   margin-right: 10px;
+   padding: 0%;
+   text-align: justify;
+}
+}

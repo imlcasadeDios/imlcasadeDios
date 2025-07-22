@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styleigleencabezado.css" rel="stylesheet" type="text/css"/>
+        <title>Iglesia Metodista Libre Casa de Dios Quienes Somos</title>
+    </head>
+    <body>
+        <header>
+            <section class="flex-container">
+                <div class="izquierda">
+                   <img src="LOGO CASA DE DIOS.jpg"alt="Logo IML"/>
+                </div>
+                <div class="derecha">
+                   <h1>"Y les daré un corazón, y un espíritu nuevo pondré dentro de ellos; y quitaré el corazón de piedra de en medio de su carne, y les daré un corazón de carne," (Ezequiel 11:19)</h1>
+                <div>
+            </section>
+        </header>
+        
+        <nav class="navbar">
+           <div class="hamburger" onclick="toggleMenu()">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+           </div>
+           <div class="menu" id="menu">
+              <a href="index.html">Inicio</a>
+              <a href="quienes somos.html">Quienes Somos</a>
+              <a href="donde estamos.html">Dónde Estamos</a>
+           </div>
+        </nav>
+        <main>
+            <section class="flex-containerquienes">
+                   <div class="titulo-quienes-somos">
+                      <h2>Quienes Somos</h2>
+                   </div>
+                   <div class="parrafo-quienes-somos">
+                      Somos una Comunidad Cristiana donde reconocemos nuestra necesidad de Dios y tenemos a nuestro Señor Jesucristo como Salvador.  Amamos a Dios, amamos a las personas y seguimos la Teología Wesleyana como manera de ver e interpretar el Evangelio. <br>
+                      <img src="BAUTIZOS 2024.jpg"alt="BAUTIZOS"/>
+                     </div>
+                    <div class="titulo-quienes-somos">
+                      <h2>Visión IML Latinoamerica</h2>
+                   </div>
+                   <div class="parrafo-quienes-somos">
+                      La Iglesia Metodista Libre participa con Dios en la restauración de Latinoamérica. <br><br>
+                      Enmarcado en ésta Visión, nuestra visión como Iglesia Local, es:
+                   </div>
+                    <div class="titulo-quienes-somos">
+                      <h2>Visión IML Casa de Dios</h2>
+                   </div>
+                   <div class="parrafo-quienes-somos">
+                      Ganar a las personas para Cristo, en el área geográfica que Dios nos ha dado a través del Movimiento PIC.  Para que vivan vidas en santidad. <br><br>
+                     <img src="MPR 2024.jpg"alt="MIEMBROS EN PLENA RELACION"/>
+                     </div>
+                     <div class="titulo-quienes-somos">
+                      <h2>Misión IML Latinoamerica</h2>
+                   </div>
+                   <div class="parrafo-quienes-somos">
+                      La iglesia Metodista Libre participa con Dios en la restauración de Latinoamérica, a través del desarrollo de líderes saludables que multipliquen discípulos, grupos e iglesias, y les empoderan para la transformación integral. <br><br>
+                      Enmarcado en ésta Misión, nuestra misión como Iglesia Local, es:
+                   </div>
+                    <div class="titulo-quienes-somos">
+                      <h2>Misión IML Casa de Dios</h2>
+                   </div>
+                   <div class="parrafo-quienes-somos">
+                      Instalar Casas de Paz o PGA en cada uno de los sectores por alcanzar y fortalecer y hacer crecer los que ya existen. De tal manera que los PGA sean grupos de transformación, donde las personas tengan cambios de conducta: Ayudándolos a vivir y andar en santidad, agradando a Dios en lo que piensan, dicen y hacen.<br><br>
+                   </div>
+            </section>
+              <div class="titulo-abajo">
+                 La Fidelidad de Dios
+              </div>
+            <div class="foto-central-grande" style="text-align: center;" id="slider">
+                      <img src="niños en rueda.jpg"alt="niños" id="slide-img"/>
+            </div>
+            <script>
+                // Lista de imágenes
+                const fotos = ["niños en rueda.jpg", "FLAYER EBV.png", "FLAYER JOVENES.JPG", "FLAYER TRATA DE PERSONAS.jpg"];
+                let indice = 0;
+
+                setInterval(function() {
+                indice = (indice + 1) % fotos.length; // Va de 0 a 2 y vuelve a 0
+                document.getElementById('slide-img').src = fotos[indice];
+                }, 2000); // Cambia cada 2 segundos (2000 milisegundos)
+            </script>
+            <div class="contenedor-franja2">
+               <div class="ultima-franja2">
+                   <a href="index.html">Volver a la Página de Inicio</a>
+               </div>
+            </div>
+        </main>
+        <footer class="footer">
+           <p>© 2025 EKY Technologies</p>
+       </footer>
+       <script src="scriptresponsivo.js"></script>
+    </body>
+</html>
