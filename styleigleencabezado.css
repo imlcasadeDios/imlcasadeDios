@@ -166,18 +166,6 @@ img {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
-  /* Estilos para pantallas con ancho máximo de 768px (tabletas y móviles) */
-  .logoconferencia {
-    width: 100px;
-    height: 100%;
-    overflow: hidden;
-    align-self: flex-end; 
-    margin:1px;
-    padding: 3px;
-  }
-}
-
 .titulo-abajo {
     font-size: 30px;
     text-align: center;
